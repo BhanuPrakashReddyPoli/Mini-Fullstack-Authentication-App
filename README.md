@@ -13,7 +13,7 @@ The project is structured and run as a single unit inside **Spring Tool Suite (S
 ![Login Page](src/main/resources/static/assets/screenshots/loginPage.jpeg)
 
 ### 📊 Employee Dashboard
-![Dashboard]src/main/resources/static/assets/screenshots/Dashboard.jpeg)
+![Dashboard](src/main/resources/static/assets/screenshots/Dashboard.jpeg)
 
 
 ## 🚀 Features

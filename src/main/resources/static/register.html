@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Registration page</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/register.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+</head>
+
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form id="registerForm">
+                    <h2>Register</h2>
+
+                    <div class="inputbox">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <input type="text" id="name" required>
+                        <label>Name</label>
+                    </div>
+
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" id="email" required>
+                        <label>Email</label>
+                    </div>
+
+                    <div class="inputbox">
+                        <input type="password" id="password" required>
+                        <label>Password</label>
+                        <ion-icon id="togglePasswordIcon" name="eye-off-outline" class="toggle-password"></ion-icon>
+                    </div>
+
+                    <div class="inputbox">
+                        <input type="password" id="confirmPassword" required>
+                        <label>Confirm Password</label>
+                        <ion-icon id="passwordMatchIcon" name="close-circle-outline" class="password-match-indicator"></ion-icon>
+                    </div>
+
+                    <button type="submit">Register</button>
+                    <div class="register">
+                        <p>Already have an account? <a href="login.html">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

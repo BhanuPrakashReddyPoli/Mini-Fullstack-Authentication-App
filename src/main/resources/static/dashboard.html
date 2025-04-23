@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard | IQ Tree Tech Soft</title>
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>IQ Tree Tech Soft</h2>
+            <ul>
+                <li class="active">🏠 Dashboard</li>
+                <li>👤 Profile</li>
+                <li>⚙️ Settings</li>
+                <li onclick="logout()">🚪 Logout</li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Top Navigation Bar -->
+            <div class="top-nav">
+                <h2>Dashboard</h2>
+                <div class="profile">
+                    <img src="assets/images/Bhanu.jpeg" alt="Profile" id="profile-pic">
+                </div>
+            </div>
+
+            <!-- Welcome Message from JS -->
+            <h1 id="welcome-message"></h1>
+
+            <!-- Dashboard Cards -->
+            <div class="cards">
+                <div class="card">
+                    <h3>Total Projects</h3>
+                    <p>5</p>
+                </div>
+                <div class="card">
+                    <h3>Pending Tasks</h3>
+                    <p>3</p>
+                </div>
+                <div class="card">
+                    <h3>Completed Tasks</h3>
+                    <p>12</p>
+                </div>
+            </div>
+
+            <!-- Employee Info (Dynamic) -->
+            <div class="employee-info">
+                <h2></h2>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function logout() {
+            localStorage.clear();
+            document.cookie.split(";").forEach(cookie => {
+                document.cookie = cookie.replace(/^ +/, "").replace(/=.*/, "=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/");
+            });
+            alert("Logged out successfully!");
+            window.location.href = "login.html";
+        }
+    </script>
+    <script src="assets/js/dashboard.js"></script>
+</body>
+
+</html>
